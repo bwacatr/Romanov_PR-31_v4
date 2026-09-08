@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Геометрический калькулятор</string>
+    <string name="login">Введите логин</string>
+    <string name="password">Введите пароль</string>
+    <string name="registration">Регистрация</string>
+    <string name="title">Выбор фигуры</string>
+    <string name="shapeChoice">Выберите фигуру</string>
+    <string name="data">Введите данные для расчета</string>
+    <string name="button1">Выполнить расчет</string>
+    <string name="shape">Название выбранной фигуры</string>
+    <string name="result">Результат</string>
+    <string name="title2">Результат вычисления</string>
+    <string name="button2">Назад</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/skyBlue">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tetrahedral"
+        android:layout_width="150dp"
+        android:layout_height="133dp"
+        android:layout_below="@+id/appName"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/tetrahedral" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tetrahedral"
+        android:layout_marginTop="62dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/white_rectangle"
+
+
+
+            android:hint="@string/login"
+        android:textSize="18sp"
+        android:textColor="@color/gray"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+
+        android:background="@drawable/white_rectangle"
+
+            android:hint="@string/password"
+        android:textSize="18sp"
+        android:textColor="@color/gray"
+        />
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/password"
+        android:layout_marginBottom="-70dp"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical"
+
+            >
+
+        <ImageButton
+                android:id="@+id/registerButton"
+                android:onClick="handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/green_rectangle"
+
+        />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="29dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="11dp"
+
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="11dp"
+            android:text="@string/registration"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

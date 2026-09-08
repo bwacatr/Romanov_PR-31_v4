@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/skyBlue">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="22dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/circle"
+        android:layout_width="460dp"
+        android:layout_height="265dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/circle" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+        android:background="@drawable/white_rectangle"
+
+
+
+        android:textColor="@color/gray"
+        />
+
+    <EditText
+
+        android:id="@+id/equation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/white_rectangle"
+
+
+        android:hint="@string/data"
+        android:textColor="@color/gray"
+        />
+
+    <EditText
+
+            android:id="@+id/equation1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/white_rectangle"
+            />
+
+    <EditText
+
+            android:id="@+id/equation2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/white_rectangle"
+            android:layout_toEndOf="@+id/equation1" />
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/equation"
+        android:layout_marginBottom="-70dp"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/green_rectangle"
+                android:id="@+id/equationButton"
+                android:onClick="handler"
+            />
+
+        <TextView
+            android:layout_width="212dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="58dp"
+
+            android:text="@string/button1"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
