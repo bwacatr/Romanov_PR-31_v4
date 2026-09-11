@@ -124,6 +124,15 @@ class SecondActivity : AppCompatActivity() {
                             .show()
                     }
                 }
+                else
+                {
+                    val alert = AlertDialog.Builder(this)
+                        .setTitle("Ошибка")
+                        .setMessage("Введите данные")
+                        .setPositiveButton("OK", null)
+                        .create()
+                        .show()
+                }
 
 
 
@@ -150,6 +159,16 @@ class SecondActivity : AppCompatActivity() {
                             .show()
                     }
 
+
+                }
+                else
+                {
+                    val alert = AlertDialog.Builder(this)
+                        .setTitle("Ошибка")
+                        .setMessage("Введите данные")
+                        .setPositiveButton("OK", null)
+                        .create()
+                        .show()
                 }
             }
 
